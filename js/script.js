@@ -11,14 +11,14 @@ window.addEventListener('load', function(){
 // iTyped 
 
 window.ityped.init(document.querySelector('.iTyped'), {
-    strings: ["I'm a Data Scientist", 'I Love Data Analysis','I Love Model Creation', 'I Love Data Visualization','I Love Python',  'I Love PowerBI'],
+    strings: ['Software Engineer', 'Jr. Data Scientist', 'React & Next.js Developer', 'AI / ML Enthusiast', 'Power BI & Visualization', 'Python Developer'],
     loop: true
 });
 
 // Portfolio Item Filter
 
 const filterContainer = document.querySelector('.portfolio-filter'),
-    filterBtns = filterContainer.children,
+    filterBtns = filterContainer ? filterContainer.querySelectorAll('button') : [],
     totalFilterBtn = filterBtns.length,
     portfolioItems = document.querySelectorAll('.portfolio-item'),
     totalPortfolioItem = portfolioItems.length;
@@ -26,6 +26,7 @@ const filterContainer = document.querySelector('.portfolio-filter'),
     for (let i = 0; i < totalFilterBtn; i++) {
         filterBtns[i].addEventListener("click", function(){
             filterContainer.querySelector('.active').classList.remove('active');
+            this.scrollIntoView({ behavior: 'smooth', inline: 'center', block: 'nearest' });
             this.classList.add("active");
 
             const filterValue = this.getAttribute('data-filter');
@@ -163,6 +164,16 @@ document.querySelector('.hire-me').addEventListener('click', function(){
     updateNav(this);
     removeBackSectionClass();
 });
+
+
+const contactForm = document.querySelector('.contact-form');
+if(contactForm){
+    contactForm.addEventListener('submit', function(e){
+        e.preventDefault();
+        alert('Thank you! Your message has been received.');
+        contactForm.reset();
+    });
+}
 
 function showSection(element) 
 {

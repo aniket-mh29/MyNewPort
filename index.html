@@ -1,989 +1,1345 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
+  <head>
+    <title>Aniket Kumare | Portfolio</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Template css Files -->
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
 
-<head>
-  <title>Aniket_mh29</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- Template css Files -->
-  <link rel="stylesheet" href="css/style.css" type="text/css">
-  
-  <style>
-        em{
-          color: #a8aea8;
-        }
+    <style>
+      em {
+        color: #a8aea8;
+      }
 
-        #quotes{
-          color: rgb(109, 131, 178);
-        }
-  </style>
-  <!-- Live Style Switcher - Demo Only -->
-  <link rel="stylesheet" class="alternate-style" title="pink" href="css/skins/pink.css" type="text/css" disabled>
-  <link rel="stylesheet" class="alternate-style" title="blue" href="css/skins/blue.css" type="text/css" >
-  <link rel="stylesheet" class="alternate-style" title="green" href="css/skins/green.css" type="text/css" disabled>
-  <link rel="stylesheet" class="alternate-style" title="orange" href="css/skins/orange.css" type="text/css" disabled>
-  <link rel="stylesheet" class="alternate-style" title="yellow" href="css/skins/yellow.css" type="text/css" disabled>
-  <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css">
-</head>
+      #quotes {
+        color: rgb(109, 131, 178);
+      }
 
-<body>
+      .service .row {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+      }
 
-  <!-- Preloader -->
-  <div class="preloader">
-    <div class="loader">
+      .service-item {
+        display: flex;
+      }
+
+      .service-item-inner {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 240px;
+      }
+    </style>
+    <!-- Live Style Switcher - Demo Only -->
+    <link
+      rel="stylesheet"
+      class="alternate-style"
+      title="pink"
+      href="css/skins/pink.css"
+      type="text/css"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      class="alternate-style"
+      title="blue"
+      href="css/skins/blue.css"
+      type="text/css"
+    />
+    <link
+      rel="stylesheet"
+      class="alternate-style"
+      title="green"
+      href="css/skins/green.css"
+      type="text/css"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      class="alternate-style"
+      title="orange"
+      href="css/skins/orange.css"
+      type="text/css"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      class="alternate-style"
+      title="yellow"
+      href="css/skins/yellow.css"
+      type="text/css"
+      disabled
+    />
+    <link rel="stylesheet" href="css/styleSwitcher.css" type="text/css" />
+  </head>
+
+  <body>
+    <!-- Preloader -->
+    <div class="preloader">
+      <div class="loader"></div>
     </div>
-  </div>
-  <!-- Preloader End -->
+    <!-- Preloader End -->
 
-
-  <!-- Main Container -->
-  <div class="main-container">
-    <!-- Aside -->
-    <div class="aside">
-      <!-- Nav Toggler Btn -->
-      <div class="nav-toggler">
-        <span></span>
+    <!-- Main Container -->
+    <div class="main-container">
+      <!-- Aside -->
+      <div class="aside">
+        <!-- Nav Toggler Btn -->
+        <div class="nav-toggler">
+          <span></span>
+        </div>
+        <div class="aside-inner">
+          <!-- Logo -->
+          <div class="logo">
+            <a href="#">ANIKET</a>
+            <h3 style="color: #b435f3; text-align: center">MyPortfolio</h3>
+          </div>
+          <!-- Nav -->
+          <ul class="nav">
+            <li>
+              <a href="#home" class="active"><i class="fa fa-home"></i> Home</a>
+            </li>
+            <li>
+              <a href="#about"><i class="fa fa-user"></i> About</a>
+            </li>
+            <li>
+              <a href="#projects"><i class="fa fa-briefcase"></i> Projects</a>
+            </li>
+            <li>
+              <a href="#skills"><i class="fa fa-heart"></i> Skills</a>
+            </li>
+            <li>
+              <a href="#certifications"
+                ><i class="fa fa-certificate"></i> Certifications</a
+              >
+            </li>
+            <li>
+              <a href="#contact"><i class="fa fa-phone"></i> Contact</a>
+            </li>
+          </ul>
+          <!-- Copyright -->
+          <div class="copyright-text">
+            Copyright &copy;
+            <script>
+              document.write(new Date().getFullYear());
+            </script>
+            | Aniket_mh29<br />
+            All rights reserved.
+          </div>
+        </div>
       </div>
-      <div class="aside-inner">
-        <!-- Logo -->
-        <div class="logo">
-          <a href="#">ANIKETku</a>
-          <h3 style="color: #b435f3;text-align: center;">MyPortfolio</h3>
+      <!-- Aside End -->
+
+      <!-- Main Content -->
+      <div class="main-content">
+        <!-- Home Section -->
+        <section class="home section active" id="home">
+          <div class="container">
+            <div class="intro">
+              <div>
+                <i id="quotes"
+                  >" There are no secrets to success. It is the result of
+                  preparation, hard work, and learning from failure. " <br />
+                  — <em>Colin Powell</em></i
+                >
+              </div>
+              <br /><br />
+
+              <img src="images/profile.png" alt="profile" class="shadow-dark" />
+              <h1>Aniket Kumare</h1>
+              <span class="iTyped" style="color: #b435f3"></span>
+              <div class="social-links">
+                <a href="https://x.com/Aniket_mh29"
+                  ><i class="fa fa-twitter"></i
+                ></a>
+                <a href="https://wa.me/qr/W5RBLDBHINBJP1"
+                  ><i class="fa fa-whatsapp"></i
+                ></a>
+                <a href="https://www.instagram.com/aniket_mh29"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+                <a href="https://github.com/aniket-mh29"
+                  ><i class="fa fa-github"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/aniketmh29"
+                  ><i class="fa fa-linkedin"></i
+                ></a>
+              </div>
+              <br /><br />
+              <div>
+                <i id="quotes"
+                  >" There is no end to 𝗘𝗱𝘂𝗰𝗮𝘁𝗶𝗼𝗻.It is not that you read a
+                  book, pass an examination, and finish with education. The
+                  whole of life, from the moment you are 𝗯𝗼𝗿𝗻 to the moment you
+                  𝗱𝗶𝗲, is a 𝙿𝚛𝚘𝚌𝚎𝚜𝚜 𝚘𝚏 𝙻𝚎𝚊𝚛𝚗𝚒𝚗𝚐...... "</i
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Home Section End -->
+
+        <!-- About Section -->
+        <section class="about section" id="about">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>About Me</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="about-content padd-15">
+                <div class="row">
+                  <div class="about-text padd-15">
+                    <h3>
+                      I'm Aniket Kumare, a
+                      <span>Software Engineer & Jr. Data Scientist</span>
+                    </h3>
+                    <p>
+                      Hi! I'm Aniket Kumare, a Software Engineer and Jr. Data
+                      Scientist with experience building modern web applications
+                      and AI-powered data solutions. I enjoy turning data into
+                      actionable insights, designing scalable user interfaces,
+                      and collaborating across teams to ship production-grade
+                      software.
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="personal-info padd-15">
+                    <div class="row">
+                      <div class="info-item padd-15">
+                        <p>Website : <span>aniketkumare.dev</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Email : <span>akumare777@gmail.com</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Highest Qualification : <span>MCA</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Phone : <span>+91 8308465357</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Location : <span>Pune, Maharashtra</span></p>
+                      </div>
+                      <div class="info-item padd-15">
+                        <p>Freelance : <span>Available</span></p>
+                      </div>
+                    </div>
+
+                    <div class="row">
+                      <div class="buttons padd-15">
+                        <a
+                          href="https://drive.google.com/drive/folders/1psYhLT7SucSHYi69OoetHtHLy8mammn"
+                          class="btn"
+                          >Download Cv</a
+                        >
+                        <a
+                          href="#contact"
+                          data-section-index="1"
+                          class="btn hire-me"
+                          >Hire me</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="education padd-15">
+                    <h3 class="title">Education</h3>
+                    <div class="row">
+                      <div class="timeline-box padd-15">
+                        <div class="timeline shadow-dark">
+                          <!-- timeline Item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h6 class="timeline-date">
+                              <i class="fa fa-calendar"></i> 2023 - 2025
+                            </h6>
+                            <h4 class="timeline-title" style="color: #ca81ef">
+                              Master of Computer Application
+                            </h4>
+                            <em>Savitribai Phule Pune University</em><br /><em
+                              >CGPA - <b>8.44</b></em
+                            >
+                            <p class="timeline-text"></p>
+                          </div>
+                          <!-- timeline Item End -->
+                          <!-- timeline Item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h6 class="timeline-date">
+                              <i class="fa fa-calendar"></i> 2020 - 2023
+                            </h6>
+                            <h4 class="timeline-title" style="color: #ca81ef">
+                              Bachelor of Science
+                            </h4>
+                            <small
+                              >(<b>Statistics, Mathematics, Computer Science</b
+                              >)</small
+                            ><br />
+                            <em>Sant Gadge Baba University Amravati</em
+                            ><br /><em>Percentage - <b>79.67%</b></em>
+                            <p class="timeline-text"></p>
+                          </div>
+                          <!-- timeline Item End -->
+
+                          <!-- timeline Item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h6 class="timeline-date">
+                              <i class="fa fa-calendar"></i> 2018 - 2020
+                            </h6>
+                            <h4 class="timeline-title" style="color: #ca81ef">
+                              HSC(10+2)
+                            </h4>
+                            <em>Maharashtra State Board</em><br /><em
+                              >Percentage - <b>79.23%</b>
+                            </em>
+                            <p class="timeline-text"></p>
+                          </div>
+                          <!-- timeline Item End -->
+                          <!-- timeline Item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h6 class="timeline-date">
+                              <i class="fa fa-calendar"></i> 2018 Passout
+                            </h6>
+                            <h4 class="timeline-title" style="color: #ca81ef">
+                              SSC
+                            </h4>
+                            <em>Maharashtra State Board</em><br /><em
+                              ><b></b>Percentage - <b>85.40%</b>
+                            </em>
+                            <p class="timeline-text"></p>
+                          </div>
+                          <!-- timeline Item End -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="experience padd-15">
+                    <h3 class="title">Experience</h3>
+                    <div class="row">
+                      <div class="timeline-box padd-15">
+                        <div class="timeline shadow-dark">
+                          <!-- timeline Item -->
+                          <div class="timeline-item">
+                            <div class="circle-dot"></div>
+                            <h6 class="timeline-date">
+                              <i class="fa fa-calendar"></i> July 2025 - Present
+                            </h6>
+                            <h4 class="timeline-title">Software Engineer</h4>
+                            <em>Haptiq Lab Pvt. Ltd.</em><br /><em
+                              >Responsive web applications, Storyblok CMS,
+                              PostgreSQL, REST APIs, GitHub, Jira</em
+                            >
+                            <p class="timeline-text">
+                              Building and maintaining responsive web
+                              applications using HTML, Tailwind CSS, React, and
+                              Next.js while collaborating with backend teams on
+                              PostgreSQL and REST API integrations.
+                            </p>
+                          </div>
+                          <!-- timeline Item End -->
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- About Section End -->
+
+        <!-- Project Section -->
+        <section class="blog section" id="projects">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Projects</h2>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Blog Item -->
+              <div class="blog-item padd-15">
+                <div
+                  class="blog-item-inner shadow-dark"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    min-height: 500px;
+                  "
+                >
+                  <div class="blog-img">
+                    <img
+                      src="images/blog/nfhs_logo.svg"
+                      alt=""
+                      style="width: 100%; height: 200px; object-fit: fill"
+                    />
+                    <div class="blog-date">Sep 2025 - Jun 2026</div>
+                  </div>
+                  <div
+                    class="blog-info"
+                    style="
+                      flex-grow: 1;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: space-between;
+                    "
+                  >
+                    <h4 class="blog-title">
+                      NFHS Learn - Learning Management System (LMS)
+                    </h4>
+                    <p class="blog-description">
+                      Built a modern LMS using TypeScript, React, Next.js, and
+                      Storyblok to deliver accessible, server-rendered course
+                      experiences.
+                    </p>
+                    <p class="blog-tags">
+                      Tags : <a href="#">TypeScript</a> , <a href="#">React</a>,
+                      <a href="#">Next.js</a>, <a href="#">Tailwind CSS</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Blog Item End -->
+              <!-- Blog Item -->
+              <div class="blog-item padd-15">
+                <div
+                  class="blog-item-inner shadow-dark"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    min-height: 500px;
+                  "
+                >
+                  <div class="blog-img">
+                    <img
+                      src="images/blog/2.jpg"
+                      alt=""
+                      style="width: 100%; height: 200px; object-fit: fill"
+                    />
+                    <div class="blog-date">Jan 2025 - May 2025</div>
+                  </div>
+                  <div
+                    class="blog-info"
+                    style="
+                      flex-grow: 1;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: space-between;
+                    "
+                  >
+                    <h4 class="blog-title">AI-Powered Health Assistant</h4>
+                    <p class="blog-description">
+                      Designed an intelligent health assistant using Python,
+                      Flask, MySQL, Gemini API, and Pinecone for semantic health
+                      search.
+                    </p>
+                    <p class="blog-tags">
+                      Tags : <a href="#">Python</a> , <a href="#">Flask</a>,
+                      <a href="#">Gemini API</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Blog Item End -->
+              <!-- Blog Item -->
+              <div class="blog-item padd-15">
+                <div
+                  class="blog-item-inner shadow-dark"
+                  style="
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                    min-height: 500px;
+                  "
+                >
+                  <div class="blog-img">
+                    <img
+                      src="images/blog/3.jpg"
+                      alt=""
+                      style="width: 100%; height: 200px; object-fit: fill"
+                    />
+                    <div class="blog-date">Aug 2024 - Dec 2024</div>
+                  </div>
+                  <div
+                    class="blog-info"
+                    style="
+                      flex-grow: 1;
+                      display: flex;
+                      flex-direction: column;
+                      justify-content: space-between;
+                    "
+                  >
+                    <h4 class="blog-title">Diabetes Prediction System</h4>
+                    <p class="blog-description">
+                      Implemented an ML-based Streamlit application to predict
+                      diabetes risk and provide interactive health insights.
+                    </p>
+                    <p class="blog-tags">
+                      Tags : <a href="#">Python</a> ,
+                      <a href="#">Machine Learning</a>,
+                      <a href="#">Streamlit</a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- Blog Item End -->
+            </div>
+          </div>
+        </section>
+        <!-- Project Section End -->
+
+        <!-- Skills Section -->
+        <section class="service section" id="skills">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Skills</h2>
+              </div>
+            </div>
+            <div class="row">
+              <!-- Service item -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon"><i class="fa fa-terminal"></i></div>
+                  <h4>Programming Languages</h4>
+                  <p>Python, Java, JavaScript, TypeScript</p>
+                </div>
+              </div>
+              <!-- Service item End -->
+              <!-- Service item -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon"><i class="fa fa-laptop"></i></div>
+                  <h4>Frontend Technologies</h4>
+                  <p>HTML, CSS, Bootstrap, Tailwind CSS, React, Next.js</p>
+                </div>
+              </div>
+              <!-- Service item End -->
+              <!-- Service item -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon"><i class="fa fa-server"></i></div>
+                  <h4>Backend Frameworks</h4>
+                  <p>Streamlit, Flask, Django, Node</p>
+                </div>
+              </div>
+              <!-- Service item End -->
+              <!-- Service item -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon"><i class="fa fa-database"></i></div>
+                  <h4>Data Science & ML</h4>
+                  <p>Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn</p>
+                </div>
+              </div>
+              <!-- Service item End -->
+              <!-- Service item -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon"><i class="fa fa-database"></i></div>
+                  <h4>Databases</h4>
+                  <p>MySQL, PostgreSQL, Pinecone</p>
+                </div>
+              </div>
+              <!-- Service Item End -->
+              <!-- Service Item -->
+              <div class="service-item padd-15">
+                <div class="service-item-inner">
+                  <div class="icon"><i class="fa fa-cogs"></i></div>
+                  <h4>Tools & Platforms</h4>
+                  <p>Power BI, AWS, Jenkins, Storyblok</p>
+                </div>
+              </div>
+              <!-- Service item End -->
+            </div>
+          </div>
+        </section>
+        <!-- Skills Section End -->
+
+        <!-- Certifications Section -->
+        <section class="portfolio section" id="certifications">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Certifications</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="portfolio-filter padd-15">
+                <button type="button" class="active" data-filter="all">
+                  All
+                </button>
+                <button type="button" data-filter="cloud-computing">
+                  Cloud Computing
+                </button>
+                <button type="button" data-filter="soft-development">
+                  Software Development
+                </button>
+                <button type="button" data-filter="web-development">
+                  Web Development
+                </button>
+                <button type="button" data-filter="data-science">
+                  Data Science
+                </button>
+                <br /><br />
+                <button type="button" data-filter="data-analytics">
+                  Data Analytics
+                </button>
+                <button type="button" data-filter="data-visualization">
+                  Data Visualization
+                </button>
+                <button type="button" data-filter="ai">
+                  Artificial Intelligence
+                </button>
+                <button type="button" data-filter="others">Others</button>
+              </div>
+            </div>
+
+            <div class="row">
+              <!-- Portfolio Item -->
+              <div
+                class="portfolio-item padd-15"
+                data-category="cloud-computing"
+              >
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Cloud Computing/AWS-Certified-Cloud-Practitioner-Certificate.png"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Cloud Computing</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div class="portfolio-item padd-15" data-category="ai">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Artificial Intelligence/ML-DL.png"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Artificial Intelligence</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div
+                class="portfolio-item padd-15"
+                data-category="cloud-computing"
+              >
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Cloud Computing/Cloud-Computing.png"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Cloud Computing</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div
+                class="portfolio-item padd-15"
+                data-category="soft-development"
+              >
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Software Development/1.jpg"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Software Development</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div class="portfolio-item padd-15" data-category="ai">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Artificial Intelligence/1.jpg"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Artificial Intelligence</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div class="portfolio-item padd-15" data-category="data-science">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Data Science/1.jpg"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Data Science</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div class="portfolio-item padd-15" data-category="data-science">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Data Science/2.jpg"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Data Science</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div
+                class="portfolio-item padd-15"
+                data-category="data-visualization"
+              >
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Data Visualization/1.jpg"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Data Visualization</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div
+                class="portfolio-item padd-15"
+                data-category="data-visualization"
+              >
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Data Visualization/2.jpg"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Data Visualization</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+
+              <!-- Portfolio Item -->
+              <div
+                class="portfolio-item padd-15"
+                data-category="data-visualization"
+              >
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Data Visualization/6.jpg"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Data Visualization</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div
+                class="portfolio-item padd-15"
+                data-category="data-visualization"
+              >
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Data Visualization/3.jpg"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Data Visualization</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div
+                class="portfolio-item padd-15"
+                data-category="data-visualization"
+              >
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Data Visualization/4.jpg"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Data Visualization</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div
+                class="portfolio-item padd-15"
+                data-category="data-visualization"
+              >
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Data Visualization/5.jpg"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Data Visualization</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div class="portfolio-item padd-15" data-category="others">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Others/1.jpg"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Salesforce</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div class="portfolio-item padd-15" data-category="others">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Others/3.jpg"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Software Testing</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div class="portfolio-item padd-15" data-category="others">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Others/4.jpg"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Linux</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div class="portfolio-item padd-15" data-category="others">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Others/5.jpg"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Scrum Methodology</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div class="portfolio-item padd-15" data-category="others">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Others/6.jpg"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Time Management</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div class="portfolio-item padd-15" data-category="others">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Others/9.jpg"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Impact Presentations</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div class="portfolio-item padd-15" data-category="others">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Others/10.jpg"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Email Writing</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div class="portfolio-item padd-15" data-category="others">
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Others/11.jpg"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Agile Methodology</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div
+                class="portfolio-item padd-15"
+                data-category="soft-development"
+              >
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Software Development/2.jpg"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Software Development</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div
+                class="portfolio-item padd-15"
+                data-category="soft-development"
+              >
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Software Development/3.jpg"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Software Development</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div
+                class="portfolio-item padd-15"
+                data-category="soft-development"
+              >
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Software Development/4.jpg"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Software Development</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div
+                class="portfolio-item padd-15"
+                data-category="soft-development"
+              >
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Software Development/5.jpg"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Software Development</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div
+                class="portfolio-item padd-15"
+                data-category="web-development"
+              >
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Web Development/1.jpg"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Web Development</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+              <!-- Portfolio Item -->
+              <div
+                class="portfolio-item padd-15"
+                data-category="web-development"
+              >
+                <div class="portfolio-item-inner shadow-dark">
+                  <div class="portfolio-img">
+                    <img
+                      src="images/certificates/Web Development/2.jpg"
+                      alt="certificate"
+                    />
+                  </div>
+                  <div class="portfolio-info">
+                    <h4>Web Development</h4>
+                    <div class="icon">
+                      <i class="fa fa-search"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Portfolio Item End -->
+            </div>
+          </div>
+        </section>
+        <!-- Certifications Section End -->
+
+        <!-- Contact Section -->
+        <section class="contact section" id="contact">
+          <div class="container">
+            <div class="row">
+              <div class="section-title padd-15">
+                <h2>Contact Me</h2>
+              </div>
+            </div>
+            <div class="row">
+              <!-- contact-info-item  -->
+              <div class="contact-info-item padd-15">
+                <div class="icon">
+                  <i class="fa fa-phone"></i>
+                  <h4>Call Me</h4>
+                  <p>+91 8308465357</p>
+                </div>
+              </div>
+              <!-- contact-info-item end -->
+              <!-- contact-info-item  -->
+              <div class="contact-info-item padd-15">
+                <div class="icon">
+                  <i class="fa fa-map-marker"></i>
+                  <h4>Location</h4>
+                  <p>Pune, Maharashtra, India</p>
+                </div>
+              </div>
+              <!-- contact-info-item end -->
+              <!-- contact-info-item  -->
+              <div class="contact-info-item padd-15">
+                <div class="icon">
+                  <i class="fa fa-envelope"></i>
+                  <h4>Email</h4>
+                  <p>akumare777@gmail.com</p>
+                </div>
+              </div>
+              <!-- contact-info-item end -->
+            </div>
+
+            <!-- Contact Form -->
+            <div class="row">
+              <form action="#" class="contact-form padd-15">
+                <div class="row">
+                  <div class="form-item col-6 padd-15">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name=""
+                        class="form-control"
+                        placeholder="Name*"
+                      />
+                    </div>
+                  </div>
+                  <div class="form-item col-6 padd-15">
+                    <div class="form-group">
+                      <input
+                        type="email"
+                        name=""
+                        class="form-control"
+                        placeholder="Email*"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        name=""
+                        class="form-control"
+                        placeholder="Subject*"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-item col-12 padd-15">
+                    <div class="form-group">
+                      <textarea
+                        class="form-control"
+                        name=""
+                        placeholder="Your Message..."
+                      ></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 padd-15">
+                    <button type="submit" class="btn">Send Message</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <!-- Contact Form End -->
+          </div>
+        </section>
+        <!-- Contact Section End -->
+      </div>
+      <!-- Main Content End -->
+    </div>
+    <!-- Main Container End -->
+
+    <!-- Lightbox -->
+    <div class="lightbox">
+      <div class="lightbox-content">
+        <div class="lightbox-close">&times;</div>
+        <img src="" alt="" onclick="nextItem()" class="lightbox-img" />
+        <div class="lightbox-caption">
+          <div class="caption-text"></div>
+          <div class="caption-counter"></div>
         </div>
-        <!-- Nav -->
-        <ul class="nav">
-          <li><a href="#home" class="active"><i class="fa fa-home"></i> Home</a></li>
-          <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
-          <li><a href="#projects"><i class="fa fa-briefcase"></i> Projects</a></li>
-          <li><a href="#skills"><i class="fa fa-heart"></i> Skills</a></li>
-          <li><a href="#certifications"><i class="fa fa-certificate"></i> Certifications</a></li>
-          <li><a href="#contact"><i class="fa fa-phone"></i> Contact</a></li>
-        </ul>
-        <!-- Copyright -->
-        <div class="copyright-text">
-          Copyright &copy;<script>document.write(new Date().getFullYear());</script> | Aniket_mh29<br> All rights reserved.
+      </div>
+      <div class="lightbox-controls">
+        <div class="prev-item" onclick="prevItem()">
+          <i class="fa fa-angle-left"></i>
+        </div>
+        <div class="next-item" onclick="nextItem()">
+          <i class="fa fa-angle-right"></i>
         </div>
       </div>
     </div>
-    <!-- Aside End -->
+    <!-- Lightbox End -->
 
-    <!-- Main Content -->
-    <div class="main-content">
-
-      <!-- Home Section -->
-      <section class="home section active" id="home">
-      
-        <div class="container">
-          
-          <div class="intro">
-            <div>
-              <i id="quotes">" There are no secrets to success. It is the result of preparation, hard work, and learning from failure. " <br>  — <em>Colin Powell</em></i>
-            </div>
-            <br><br>
-
-            <img src="images/profile.png" alt="profile" class="shadow-dark">
-            <h1>Aniket Kumare</h1>
-            <span class="iTyped" style="color: #b435f3;"></span>
-            <div class="social-links">
-              <a href="https://x.com/Aniket_mh29?t=FjqqShjGghtpeu26HgHGSg&s=09"><i class="fa fa-twitter"></i></a>
-              <a href="https://wa.me/qr/W5RBLDBHINBJP1"><i class="fa fa-whatsapp"></i></a>
-              <a href="https://www.instagram.com/aniket_mh29/"><i class="fa fa-instagram"></i></a>
-              <a href="#"><i class="fa fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/aniketmh29?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa fa-linkedin"></i></a>
-            </div>
-            <br><br>
-                <div>
-                  <i id="quotes">" There is no end to 𝗘𝗱𝘂𝗰𝗮𝘁𝗶𝗼𝗻.It is not that you read a book, pass an examination, and finish with education. The whole of life, from the moment you are 𝗯𝗼𝗿𝗻 to the moment you 𝗱𝗶𝗲, is a 𝙿𝚛𝚘𝚌𝚎𝚜𝚜 𝚘𝚏 𝙻𝚎𝚊𝚛𝚗𝚒𝚗𝚐...... "</i>
-                </div>
-            </div>
-        </div>
-        
-      </section>
-      <!-- Home Section End -->
-
-      <!-- About Section -->
-      <section class="about section" id="about">
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>About Me</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="about-content padd-15">
-              <div class="row">
-                <div class="about-text padd-15">
-                  <h3>I'm Aniket Kumare and <span>Jr.Data Scientist</span></h3>
-                  <p>Hi! My name is Aniket Kumare. I am a Jr.Data Scientist, and I'm very passionate and dedicated
-                    to my work. With Excellent experience as a professional Data Scientist, I have acquired the skills and knowledge necessary to make your project a success. I enjoy every step of the designing models, from discussion and collaboration with team members. </p>
-                </div>
-              </div>
-              <div class="row">
-                <div class="personal-info padd-15">
-                  <div class="row">
-                    
-                    <div class="info-item padd-15">
-                      <p>Website : <span>www.domain.com</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Email : <span>akumare777@gmail.com</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Highest Qalification : <span>MCA</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Phone : <span>+91 8308465357</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Location : <span>Pune,Maharashtra</span></p>
-                    </div>
-                    <div class="info-item padd-15">
-                      <p>Freelance : <span>Available</span></p>
-                    </div> 
-                  </div>
-
-                  <div class="row">
-                    <div class="buttons padd-15">
-                      <a href="/images/Resume.pdf" class="btn">Download Cv</a>
-                      <a href="#contact" data-section-index="1" class="btn hire-me">Hire me</a>
-                    </div>
-                  </div>
-                </div>
-
-
-                <div class="skills padd-15">
-                  <div class="row">
-                    <div class="skill-item padd-15">
-                      <h5>NumPy/Pandas/Seaborn</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 76%;"></div>
-                        <div class="skill-porcent">
-                          76%
-                        </div>
-                      </div>
-                    </div>
-                    <div class="skill-item padd-15">
-                      <h5>Python</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 90%;"></div>
-                        <div class="skill-porcent">
-                          90%
-                        </div>
-                      </div>
-                    </div>
-                    <div class="skill-item padd-15">
-                      <h5>Java</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 85%;"></div>
-                        <div class="skill-porcent">
-                          85%
-                        </div>
-                      </div>
-                    </div>
-                    <div class="skill-item padd-15">
-                      <h5>PowerBI/Tableau</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 78%;"></div>
-                        <div class="skill-porcent">
-                          78%
-                        </div>
-                      </div>
-                    </div>
-                    <div class="skill-item padd-15">
-                      <h5>MySQL</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 82%;"></div>
-                        <div class="skill-porcent">
-                          82%
-                        </div>
-                      </div>
-                    </div>
-                    <div class="skill-item padd-15">
-                      <h5>HTML/CSS</h5>
-                      <div class="progress">
-                        <div class="progress-in" style="width: 94%;"></div>
-                        <div class="skill-porcent">
-                          94%
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="row">
-                <div class="education padd-15">
-                  <h3 class="title">Education</h3>
-                  <div class="row">
-                    <div class="timeline-box padd-15">
-                      <div class="timeline shadow-dark">
-                        <!-- timeline Item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2023 - 2025</h6>
-                          <h4 class="timeline-title" style="color: #ca81ef;">Master of Computer Application</h4>
-                          <em>Savitribai Phule Pune University</em><br><em>CGPA - <b>8.0</b></em>
-                          <p class="timeline-text"></p>
-                        </div>
-                        <!-- timeline Item End -->
-                        <!-- timeline Item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2020 - 2023</h6>
-                          <h4 class="timeline-title" style="color: #ca81ef;">Bachelor of Science</h4><small>(<b>Statistics, Mathematics, Computer Science</b>)</small><br>
-                          <em>Sant Gadge Baba University Amravati</em><br><em>Percentage - <b>79.67%</b></em>
-                          <p class="timeline-text"></p>
-                        </div>
-                        <!-- timeline Item End -->
-                         
-                        <!-- timeline Item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2018 - 2020</h6>
-                          <h4 class="timeline-title" style="color: #ca81ef;">HSC(10+2)</h4>
-                          <em>Maharashtra State Board</em><br><em>Percentage - <b>79.23%</b> </em>
-                          <p class="timeline-text"></p>
-                        </div>
-                        <!-- timeline Item End -->
-                         <!-- timeline Item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2018 Passout</h6>
-                          <h4 class="timeline-title" style="color: #ca81ef;">SSC</h4>
-                          <em>Maharashtra State Board</em><br><em><b></b>Percentage - <b>85.40%</b> </em>
-                          <p class="timeline-text"></p>
-                        </div>
-                        <!-- timeline Item End -->
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="experience padd-15">
-                  <h3 class="title">Experience</h3>
-                  <div class="row">
-                    <div class="timeline-box padd-15">
-                      <div class="timeline shadow-dark">
-
-                        <!-- timeline Item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2013 - 2015</h6>
-                          <h4 class="timeline-title">Backend Developer</h4>
-                          <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non
-                            nisi semper, et elementum lorem ornare.</p>
-                        </div>
-                        <!-- timeline Item End -->
-
-                        <!-- timeline Item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2011 - 2013</h6>
-                          <h4 class="timeline-title">Frontend Developer</h4>
-                          <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non
-                            nisi semper, et elementum lorem ornare.</p>
-                        </div>
-                        <!-- timeline Item End -->
-
-                        <!-- timeline Item -->
-                        <div class="timeline-item">
-                          <div class="circle-dot"></div>
-                          <h6 class="timeline-date"><i class="fa fa-calendar"></i> 2008 - 2011</h6>
-                          <h4 class="timeline-title">Graphic Designer</h4>
-                          <p class="timeline-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque scelerisque diam non
-                            nisi semper, et elementum lorem ornare.</p>
-                        </div>
-                        <!-- timeline Item End -->
-
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- About Section End -->
-
-      <!-- Project Section -->
-      <section class="blog section" id="projects">
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>Projects</h2>
-            </div>
-          </div>
-          <div class="row">
-            <!-- Blog Item -->
-            <div class="blog-item padd-15">
-              <div class="blog-item-inner shadow-dark">
-                <div class="blog-img">
-                  <img src="images/blog/1.jpg" alt="">
-                  <div class="blog-date">
-                    4 jun 2020
-                  </div>
-                </div>
-                <div class="blog-info">
-                  <h4 class="blog-title">Responsive Web Design</h4>
-                  <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo
-                    quam, eum alias id, repellendus magni, quas.</p>
-                  <p class="blog-tags">Tags : <a href="#">Html</a> , <a href="#">css</a></p>
-                </div>
-              </div>
-            </div>
-            <!-- Blog Item End -->
-            <!-- Blog Item -->
-            <div class="blog-item padd-15">
-              <div class="blog-item-inner shadow-dark">
-                <div class="blog-img">
-                  <img src="images/blog/2.jpg" alt="">
-                  <div class="blog-date">
-                    4 jun 2020
-                  </div>
-                </div>
-                <div class="blog-info">
-                  <h4 class="blog-title">Creative Slideshow</h4>
-                  <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo
-                    quam, eum alias id, repellendus magni, quas.</p>
-                  <p class="blog-tags">Tags : <a href="#">Html</a> , <a href="#">Javascript</a></p>
-                </div>
-              </div>
-            </div>
-            <!-- Blog Item End -->
-            <!-- Blog Item -->
-            <div class="blog-item padd-15">
-              <div class="blog-item-inner shadow-dark">
-                <div class="blog-img">
-                  <img src="images/blog/3.jpg" alt="">
-                  <div class="blog-date">
-                    4 jun 2020
-                  </div>
-                </div>
-                <div class="blog-info">
-                  <h4 class="blog-title">Image Gallery Lightbox</h4>
-                  <p class="blog-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, porro rem quod illo
-                    quam, eum alias id, repellendus magni, quas.</p>
-                  <p class="blog-tags">Tags : <a href="#">Javascript</a></p>
-                </div>
-              </div>
-            </div>
-            <!-- Blog Item End -->
-          </div>
-        </div>
-      </section>
-      <!-- Project Section End -->
-
-
-      <!-- Skills Section -->
-      <section class="service section" id="skills">
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>Skills</h2>
-            </div>
-          </div>
-          <div class="row">
-            
-            <!-- Service item -->
-            <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon"><i class="fa fa-laptop"></i></div>
-                <h4>Web Design</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
-              </div>
-            </div>
-            <!-- Service item End -->
-            <!-- Service item -->
-            <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon"><i class="fa fa-photo"></i></div>
-                <h4>Photography</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
-              </div>
-            </div>
-            <!-- Service item End -->
-            <!-- Service item -->
-            <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon"><i class="fa fa-code"></i></div>
-                <h4>Web Development</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
-              </div>
-            </div>
-            <!-- Service item End -->
-            <!-- Service item -->
-            <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon"><i class="fa fa-film"></i></div>
-                <h4>Video Editing</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
-              </div>
-            </div>
-            <!-- Service item End -->
-            <!-- Service item -->
-            <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon"><i class="fa fa-rocket"></i></div>
-                <h4>Seo Optimization</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
-              </div>
-            </div>
-            <!-- Service Item End -->
-            <!-- Service Item -->
-            <div class="service-item padd-15">
-              <div class="service-item-inner">
-                <div class="icon"><i class="fa fa-paint-brush"></i></div>
-                <h4>Logo Design</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum.</p>
-              </div>
-            </div>
-            <!-- Service item End -->
-          </div>
-        </div>
-      </section>
-      <!-- Skills Section End -->
-
-      <!-- Certifications Section -->
-      <section class="portfolio section" id="certifications">
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>Certifications</h2>
-            </div>
-          </div>
-          <div class="row">
-            <div class="portfolio-filter padd-15">
-              <button type="button" class="active" data-filter="all">All</button>
-              <button type="button" data-filter="soft-development">Software Development</button>
-              <button type="button" data-filter="web-development">Web Development</button>
-              <button type="button" data-filter="data-science">Data Science</button>
-            <br><br>
-              <button type="button" data-filter="data-analytics">Data Analytics</button>
-              <button type="button" data-filter="data-visualization">Data Visualization</button>
-              <button type="button" data-filter="ai">Artificial Intelligence</button>
-              <button type="button" data-filter="others">Others</button>
-            </div>
-          </div>
-          
-          <div class="row">
-            <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="ai">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Artificial Intelligence/1.jpg" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Artificial Intelligence</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-            <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="data-science">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Data Science/1.jpg" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Data Science</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-             <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="data-science">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Data Science/2.jpg" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Data Science</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-            <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="data-visualization">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Data Visualization/1.jpg" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Data Visualization</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-             <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="data-visualization">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Data Visualization/2.jpg" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Data Visualization</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-             
-             <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="data-visualization">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Data Visualization/6.jpg" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Data Visualization</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-             <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="data-visualization">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Data Visualization/3.jpg" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Data Visualization</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-              <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="data-visualization">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Data Visualization/4.jpg" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Data Visualization</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-              <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="data-visualization">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Data Visualization/5.jpg" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Data Visualization</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-            <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="others">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Others/1.jpg" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Salesforce</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-             <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="others">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Others/2.png" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Lean Six Sigma Yellow Belt</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-             <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="others">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Others/3.jpg" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Software Testing</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-             <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="others">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Others/4.jpg" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Linux</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-             <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="others">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Others/5.jpg" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Scrum Methodology</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-             <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="others">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Others/6.jpg" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Time Management</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-             <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="others">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Others/9.jpg" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Impact Presentations</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-             <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="others">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Others/10.jpg" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Email Writing</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-              <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="others">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Others/11.jpg" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Agile Methodology</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-
-
-
-
-            <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="soft-development">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Software Development/1.jpg" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Software Development</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-             <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="soft-development">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Software Development/2.jpg" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Software Development</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-            <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="soft-development">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Software Development/3.jpg" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Software Development</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-             <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="soft-development">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Software Development/4.jpg" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Software Development</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-             <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="soft-development">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Software Development/5.jpg" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Software Development</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-             <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="web-development">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Web Development/1.jpg" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Web Development</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-            <!-- Portfolio Item -->
-            <div class="portfolio-item padd-15" data-category="web-development">
-              <div class="portfolio-item-inner shadow-dark">
-                <div class="portfolio-img">
-                  <img src="images/certificates/Web Development/2.jpg" alt="certificate">
-                </div>
-                <div class="portfolio-info">
-                  <h4>Web Development</h4>
-                  <div class="icon">
-                    <i class="fa fa-search"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Portfolio Item End -->
-          
-          </div>
-        </div>
-      </section>
-      <!-- Certifications Section End -->
-
-      <!-- Contact Section -->
-      <section class="contact section" id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="section-title padd-15">
-              <h2>Contact Me</h2>
-            </div>
-          </div>
-          <div class="row">
-            <!-- contact-info-item  -->
-            <div class="contact-info-item padd-15">
-              <div class="icon">
-                <i class="fa fa-phone"></i>
-                <h4>Call Me</h4>
-                <p>+91 8308465357</p>
-              </div>
-            </div>
-            <!-- contact-info-item end -->
-            <!-- contact-info-item  -->
-            <div class="contact-info-item padd-15">
-              <div class="icon">
-                <i class="fa fa-map-marker"></i>
-                <h4>Location</h4>
-                <p>Pune, Maharashtra, India</p>
-              </div>
-            </div>
-            <!-- contact-info-item end -->
-            <!-- contact-info-item  -->
-            <div class="contact-info-item padd-15">
-              <div class="icon">
-                <i class="fa fa-envelope"></i>
-                <h4>Email</h4>
-                <p>akumare777@gmail.com</p>
-              </div>
-            </div>
-            <!-- contact-info-item end -->
-          </div>
-
-          <!-- Contact Form -->
-          <div class="row">
-            <form action="#" class="contact-form padd-15">
-              <div class="row">
-                <div class="form-item col-6 padd-15">
-                  <div class="form-group">
-                    <input type="text" name="" class="form-control" placeholder="Name*">
-                  </div>
-                </div>
-                <div class="form-item col-6 padd-15">
-                  <div class="form-group">
-                    <input type="email" name="" class="form-control" placeholder="Email*">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="form-item col-12 padd-15">
-                  <div class="form-group">
-                    <input type="text" name="" class="form-control" placeholder="Subject*">
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="form-item col-12 padd-15">
-                  <div class="form-group">
-                    <textarea class="form-control" name="" placeholder="Your Message..."></textarea>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-12 padd-15">
-                  <button type="submit" class="btn">Send Message</button>
-                </div>
-              </div>
-            </form>
-          </div>
-          <!-- Contact Form End -->
-        </div>
-      </section>
-      <!-- Contact Section End -->
-
-    </div>
-    <!-- Main Content End -->
-  </div>
-  <!-- Main Container End -->
-
-  <!-- Lightbox -->
-  <div class="lightbox">
-    <div class="lightbox-content">
-      <div class="lightbox-close">&times;</div>
-      <img src="" alt="" onclick="nextItem()" class="lightbox-img">
-      <div class="lightbox-caption">
-        <div class="caption-text"></div>
-        <div class="caption-counter"></div>
+    <!-- Live Style Switcher - Demo Only -->
+    <div class="style-switcher">
+      <div class="toggle-style-switcher">
+        <i class="fa fa-cog fa-spin"></i>
       </div>
+      <h5>Style Switcher</h5>
+      <ul>
+        <li>
+          <a
+            href="javascript:void(0);"
+            title="pink"
+            style="background-color: #ec1839"
+            onclick="setActiveStyle('pink')"
+          ></a>
+        </li>
+        <li>
+          <a
+            href="javascript:void(0);"
+            title="blue"
+            style="background-color: #2196f3"
+            onclick="setActiveStyle('blue')"
+          ></a>
+        </li>
+        <li>
+          <a
+            href="javascript:void(0);"
+            title="orange"
+            style="background-color: #fa5b0f"
+            onclick="setActiveStyle('orange')"
+          ></a>
+        </li>
+        <li>
+          <a
+            href="javascript:void(0);"
+            title="yellow"
+            style="background-color: #ffb400"
+            onclick="setActiveStyle('yellow')"
+          ></a>
+        </li>
+        <li>
+          <a
+            href="javascript:void(0);"
+            title="green"
+            style="background-color: #72b626"
+            onclick="setActiveStyle('green')"
+          ></a>
+        </li>
+      </ul>
+      <h5>Body Skin</h5>
+      <label>
+        <input
+          type="radio"
+          class="body-skin"
+          name="body-skin"
+          value="light"
+          checked="true"
+        />
+        Light
+      </label>
+      <label>
+        <input type="radio" class="body-skin" name="body-skin" value="dark" />
+        Dark
+      </label>
     </div>
-    <div class="lightbox-controls">
-      <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
-      <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
-    </div>
-  </div>
-  <!-- Lightbox End -->
+    <!-- Live Style Switcher - Demo Only End -->
 
-  <!-- Live Style Switcher - Demo Only -->
-  <div class="style-switcher">
-    <div class="toggle-style-switcher">
-      <i class="fa fa-cog fa-spin"></i>
-    </div>
-    <h5>Style Switcher</h5>
-    <ul>
-      <li><a href="javascript:void(0);" title="pink" style="background-color: #ec1839;" onclick="setActiveStyle('pink')"></a></li>
-      <li><a href="javascript:void(0);" title="blue" style="background-color: #2196f3;" onclick="setActiveStyle('blue')"></a></li>
-      <li><a href="javascript:void(0);" title="orange" style="background-color: #fa5b0f;" onclick="setActiveStyle('orange')"></a></li>
-      <li><a href="javascript:void(0);" title="yellow" style="background-color: #ffb400;" onclick="setActiveStyle('yellow')"></a></li>
-      <li><a href="javascript:void(0);" title="green" style="background-color: #72b626;" onclick="setActiveStyle('green')"></a></li>
-    </ul>
-    <h5>Body Skin</h5>
-    <label>
-      <input type="radio" class="body-skin" name="body-skin" value="light" checked="true"> Light
-    </label>
-    <label>
-      <input type="radio" class="body-skin" name="body-skin" value="dark"> Dark
-    </label>
-  </div>
-  <!-- Live Style Switcher - Demo Only End -->
-
-  <!-- Plugins -->
-  <script src="js/ityped.min.js"></script>
-  <!-- Template js -->
-  <script src="js/script.js"></script>
-  <!-- Live Style Js - Demo Only -->
-  <script src="js/styleSwitcher.js"></script>
-</body>
-
+    <!-- Plugins -->
+    <script src="js/ityped.min.js"></script>
+    <!-- Template js -->
+    <script src="js/script.js"></script>
+    <!-- Live Style Js - Demo Only -->
+    <script src="js/styleSwitcher.js"></script>
+  </body>
 </html>

@@ -807,11 +807,26 @@ select {
 }
 
 .portfolio .portfolio-filter {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
     flex: 0 0 100%;
     -ms-flex: 0 0 100%;
     max-width: 100%;
-    text-align: center;
     margin-bottom: 40px;
+    padding-bottom: 5px;
+}
+
+.portfolio .portfolio-filter::-webkit-scrollbar {
+    height: 8px;
+}
+
+.portfolio .portfolio-filter::-webkit-scrollbar-track {
+    background: transparent;
 }
 
 .portfolio .portfolio-filter button {
@@ -828,6 +843,12 @@ select {
     padding-bottom: 2px;
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
+    scroll-snap-align: center;
+}
+
+.portfolio .portfolio-filter button.active {
+    color: #b435f3;
+    border-bottom-color: #b435f3;
 }
 
 .portfolio .portfolio-item {
@@ -1254,18 +1275,13 @@ select {
         padding-top: 70px;
     }
 
-    .aside .nav-toggler {
-        display: -ms-flexbox;
-        display: flex;
-        left: 30px;
-    }
-
-    .aside .nav-toggler.open {
-        left: 300px;
-    }
-
     .aside {
-        left: -270px;
+        left: -250px;
+        width: 250px;
+    }
+
+    .aside .aside-inner {
+        padding: 20px;
     }
 
     .aside.open {
@@ -1277,7 +1293,17 @@ select {
     }
 
     .section.open {
-        left: 270px;
+        left: 250px;
+    }
+
+    .aside .nav-toggler {
+        display: -ms-flexbox;
+        display: flex;
+        left: 25px;
+    }
+
+    .aside .nav-toggler.open {
+        left: 275px;
     }
 
     .about .about-content .personal-info .info-item p span {
@@ -1287,41 +1313,146 @@ select {
 }
 
 @media(max-width: 991px) {
-
-    .service .service-item,
+    .portfolio .portfolio-item,
     .blog .blog-item,
-    .portfolio .portfolio-item {
+    .service .service-item,
+    .contact .contact-info-item {
         flex: 0 0 50%;
         -ms-flex: 0 0 50%;
         max-width: 50%;
     }
-}
-
-@media(max-width: 767px) {
 
     .about .about-content .personal-info,
-    .contact .contact-form .col-6,
-    .service .service-item,
-    .blog .blog-item,
     .about .about-content .skills,
     .about .about-content .education,
-    .about .about-content .experience {
+    .about .about-content .experience,
+    .contact .contact-form .col-6 {
         flex: 0 0 100%;
         -ms-flex: 0 0 100%;
         max-width: 100%;
     }
 
+    .about .about-content .personal-info .info-item {
+        flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .about .about-content .personal-info .info-item p,
+    .about .about-content .about-text p,
+    .about .about-content .skills .skill-item h5,
+    .blog .blog-item-inner .blog-info .blog-description,
+    .blog .blog-item-inner .blog-info .blog-tags {
+        font-size: 14px;
+    }
+
+    .portfolio .portfolio-filter {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
     .portfolio .portfolio-filter button {
-        margin-bottom: 10px;
+        margin: 5px 8px;
     }
 }
 
-@media(max-width: 575px) {
+@media(max-width: 767px) {
+    .section {
+        position: relative;
+        left: 0 !important;
+        top: 0;
+        right: 0;
+        bottom: auto;
+        padding: 0 15px;
+    }
+
+    .aside {
+        width: 100%;
+        left: -100%;
+        top: 0;
+        border-right: none;
+        border-bottom: 1px solid #e8dfec;
+    }
+
+    .aside.open {
+        left: 0;
+    }
+
+    .aside .aside-inner {
+        position: relative;
+        height: auto;
+    }
+
+    .aside .nav-toggler {
+        display: -ms-flexbox;
+        display: flex;
+        left: 15px;
+        top: 15px;
+    }
+
+    .section.open {
+        left: 0 !important;
+    }
 
     .portfolio .portfolio-item,
+    .blog .blog-item,
+    .service .service-item,
     .contact .contact-info-item {
         flex: 0 0 100%;
         -ms-flex: 0 0 100%;
         max-width: 100%;
+    }
+
+    .about .about-content .skills,
+    .about .about-content .education,
+    .about .about-content .experience {
+        margin-top: 20px;
+    }
+
+    .about .about-content .personal-info .info-item {
+        padding: 0;
+    }
+
+    .home .intro img {
+        height: 160px;
+        width: 160px;
+    }
+}
+
+@media(max-width: 575px) {
+    .home .intro img {
+        height: 140px;
+        width: 140px;
+    }
+
+    .section {
+        padding: 0 10px;
+    }
+
+    .aside .aside-inner {
+        padding: 20px 15px 90px;
+    }
+
+    .style-switcher {
+        display: none;
+    }
+
+    .portfolio .portfolio-filter button {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
+
+    .contact .contact-form .form-item .form-control {
+        padding: 10px 20px;
+    }
+
+    .contact .contact-form .col-6 {
+        flex: 0 0 100%;
+        -ms-flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .aside .nav-toggler {
+        left: 10px;
     }
 }
